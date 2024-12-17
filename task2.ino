@@ -2,16 +2,16 @@
 #include <MPU6050.h>  // Include MPU6050 library
 
 // Motor driver pins
-int motorPin1 = 4; // IN1 pin on motor driver connected to pin 4 in arduino
-int motorPin2 = 5; // IN2 pin on motor driver connected to pin 5 in arduino
+int motorPin1 = 4; // IN1 pin on motor driver connected to pin D4 in arduino
+int motorPin2 = 5; // IN2 pin on motor driver connected to pin D5 in arduino
 int enablePin = 9; // Enable pin on motor driver connected to pin 9 in arduino (the enable pin can be connected to ∿ pins in arduino)
 
 // Encoder pins
-int encoderPinA = 2; // encoder pin A is C1 pin on the DC motor, it is connected with pin 2 in arduino
-int encoderPinB = 3; // encoder pin B is C2 pin on the DC motor, it is connected with pin 3 in arduino
+int encoderPinA = 2; // encoder pin A is C1 pin on the DC motor, it is connected with pin D2 in arduino
+int encoderPinB = 3; // encoder pin B is C2 pin on the DC motor, it is connected with pin D3 in arduino
 
 // LCD initialization for parallel mode
-LiquidCrystal lcd(7, 8, 10, 11, 12, 13);  // {LCD pin -> arduino pin} ==> {RS -> pin 7, E -> pin 8, D4 -> pin 10, D5 -> pin 11, D6 -> pin 12, D7 -> pin 13}
+LiquidCrystal lcd(7, 8, 10, 11, 12, 13);  // {LCD pin -> arduino pin} ==> {RS -> pin D7, E -> pin D8, D4 -> pin D10, D5 -> pin D11, D6 -> pin D12, D7 -> pin D13}
 
 // MPU6050 initialization
 MPU6050 mpu;
